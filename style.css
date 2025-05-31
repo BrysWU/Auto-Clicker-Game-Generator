@@ -1,0 +1,106 @@
+body {
+    background: #181d27;
+    color: #f6faff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #23293a;
+    padding: 2em 2.5em;
+    border-radius: 12px;
+    box-shadow: 0 4px 32px #0004;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+form label, form legend {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 0.4em 0.7em;
+    margin-top: 0.2em;
+    border-radius: 6px;
+    border: 1px solid #35405c;
+    background: #181d27;
+    color: #f6faff;
+    font-size: 1em;
+}
+
+fieldset {
+    border: 1px solid #35405c;
+    border-radius: 6px;
+    margin-bottom: 1em;
+    padding: 1em;
+    background: #1c2330;
+}
+
+fieldset label {
+    margin-right: 1em;
+    font-size: 0.98em;
+}
+
+button[type="submit"], #downloadZip {
+    background: #00ad6e;
+    color: #fff;
+    border: none;
+    padding: 0.7em 1.5em;
+    font-size: 1.1em;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1em;
+    transition: background 0.2s;
+}
+
+button[type="submit"]:hover, #downloadZip:hover {
+    background: #008c56;
+}
+
+#outputSection {
+    margin-top: 2em;
+}
+
+.tabs {
+    margin-bottom: 1em;
+}
+
+.tab-button {
+    background: #23293a;
+    color: #f6faff;
+    border: 1px solid #35405c;
+    border-bottom: none;
+    padding: 0.5em 1.2em;
+    cursor: pointer;
+    border-radius: 6px 6px 0 0;
+    margin-right: 0.1em;
+    font-size: 1em;
+}
+
+.tab-button.active, .tab-button:focus {
+    background: #181d27;
+    font-weight: bold;
+    outline: none;
+}
+
+.code-block {
+    background: #181d27;
+    border: 1px solid #35405c;
+    border-radius: 0 0 6px 6px;
+    padding: 1em;
+    overflow-x: auto;
+    min-height: 200px;
+    font-size: 0.94em;
+    margin-top: 0;
+    margin-bottom: 1em;
+    white-space: pre-wrap;
+}

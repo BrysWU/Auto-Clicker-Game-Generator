@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Autoclicker Game Script Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Autoclicker Game Script Generator</h1>
+        <form id="generatorForm">
+            <label>
+                Clicker Image Name:
+                <input type="text" id="clickerImage" placeholder="e.g. cookie.png" required>
+            </label>
+            <fieldset>
+                <legend>Features</legend>
+                <label><input type="checkbox" id="shop" checked> Shop</label>
+                <label><input type="checkbox" id="upgrades" checked> Upgrades</label>
+                <label><input type="checkbox" id="achievements"> Achievements</label>
+                <label><input type="checkbox" id="sound"> Sound Effects</label>
+            </fieldset>
+            <button type="submit">Generate Script</button>
+        </form>
+        <div id="outputSection" style="display:none;">
+            <h2>Generated Code</h2>
+            <div class="tabs">
+                <button type="button" class="tab-button active" data-tab="html">HTML</button>
+                <button type="button" class="tab-button" data-tab="css">CSS</button>
+                <button type="button" class="tab-button" data-tab="js">JS</button>
+            </div>
+            <pre id="code-html" class="code-block"></pre>
+            <pre id="code-css" class="code-block" style="display:none;"></pre>
+            <pre id="code-js" class="code-block" style="display:none;"></pre>
+            <button id="downloadZip">Download as .zip</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
